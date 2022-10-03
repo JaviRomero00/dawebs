@@ -1,0 +1,34 @@
+<body>
+    <div>
+        <h1 id="cabecera">Página de datos</h1>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        <div id="div6"></div>
+    </div>
+    <script>
+        debugger;
+        alert("Buenas Tardes");
+        alert("Introduzca sus datos personales a continuación");
+        document.write ("<h2>Gracias por facilitarnos sus datos</h2>");
+        document.getElementById("div1").innerHTML=("<h3>Datos principales</h3>");
+        var nombre=prompt("Introduce tu nombre:" );
+        document.getElementById("div2").innerHTML=("<p>Este es tu nombre: "+nombre+"</p>");
+        var nombre=prompt("Introduce tu apellido:" );
+        document.getElementById("div3").innerHTML=("<p>Este es tu apellido: "+nombre+"</p>");
+        var nombre=prompt("Introduce tu edad:" );
+        document.getElementById("div4").innerHTML=("<p>Esta es tu edad: "+nombre+"</p>");
+        var c=confirm("¿Estudias?");
+        var texto;
+        if (c){texto="Sí"}else {texto="No"}
+        document.getElementById("div5").innerHTML=(texto+" estudias");
+        if (texto=="Sí"){
+            var centro=prompt("Estudias en el centro: ");
+            document.getElementById("div6").innerHTML=("<p>Estudias en el centro: "+centro+"</p>")
+        }
+
+
+    </script>
+    </body>

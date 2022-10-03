@@ -54,6 +54,35 @@ varias lineas
     ejemplo "hola"[0] = h, "hola"[3] = a. Recordar que las tildes y caracteres especiales ocupan un espacio propio por tanto esta dentro de la cadena y su posición es
     justo despues de la letra sola.
 
+    funciones de variables de tipo string: https://www.php.net/manual/es/book.strings.php
+
+    funciones de variables de tipo string importantes: strstr, trim, strpos, mb_strlen(se usa para contar los caracteres de una cadena)
+
+    revisar informacion de php, mirar funciones activadas, paquetes descargados y demas: phpinfo()
+
+    mb_substr() se usa para saber la letra en una posicion determinada en la cadena, se usa por delante del [] ya que esta funcion si lee los caracteres unicode
+
+    funciones de cadenas de caracteres multibytes: https://www.php.net/manual/es/ref.mbstring.php
+
+    valor null es el unico valor del tipo null que tenemos en php
+
+    is_null() sirve para comprobar si un valor es nulo
+
+    isset() para comprobar si una variable existe, pero si una variable tiene un valor null devolvera false apesar de que la variabel realmente esta declarada y
+    por tanto existe, es decir isset devolvera true si la variable existe y su valor no es null.
+
+    empty() dice si algo es vacio, como una cadena vacia o el valor 0
+
+    manipulacion de tipos: https://www.php.net/manual/es/language.types.type-juggling.php
+
+    intval(), strval(), number_format (revisar en casa)
+
+    constantes magicas php: https://www.php.net/manual/es/language.constants.predefined.php
+
+    estructuras de control: son en general las mismas que java, se meten en llaves por reglas de estilo aunqeu solo sea una sentencia, algunas de ellas son:
+    if, if else, switch, for, case,...
+
+
 
 
 
