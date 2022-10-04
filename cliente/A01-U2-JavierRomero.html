@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Notas</title>
+</head>
+<body>
+    <div>
+        <h1 id="cabecera">Calculador de Notas</h1>
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </div>
+    <script type="text/javascript">
+
+        var nota=prompt("Introduce la nota:" );
+            document.getElementById("div1").innerHTML=("<p>Esta es la nota a calcular: "+nota+"</p>");
+        var bisiesto =  (0 < nota && nota < 5 ) ? document.getElementById("div2").innerHTML=("Suspenso"):
+                        (5 <= nota && nota < 7) ? document.getElementById("div2").innerHTML=("Aprobado"):
+                        (7 <= nota && nota < 9) ? document.getElementById("div2").innerHTML=("Notable"):
+                        (9 <= nota && nota <= 10) ? document.getElementById("div2").innerHTML=("Sobresaliente"):
+                        document.getElementById("div2").innerHTML=("La nota introducida no es correcta");
+    </script>
+</body>
+</html>

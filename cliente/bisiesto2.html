@@ -1,0 +1,19 @@
+<body>
+    <div>
+        <h1 id="cabecera">Calculador de años bisiesto</h1>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+    </div>
+    <script type="text/javascript">
+
+        var ano=prompt("Introduce un año:" );
+            document.getElementById("div1").innerHTML=("<p>Este es el año a calcular: "+ano+"</p>");
+        var bisiesto =  (ano % 400 == 0) ? document.getElementById("div2").innerHTML=("El año "+ ano + " es bisiesto"):
+                        (ano % 100 == 0) ? document.getElementById("div3").innerHTML=("El año "+ ano + " no es bisiesto"):
+                        (ano % 4 == 0) ? document.getElementById("div4").innerHTML=("El año "+ ano + " es bisiesto"):
+                        document.getElementById("div5").innerHTML=("El año " + ano + " no es bisiesto");
+    </script>
+</body>
