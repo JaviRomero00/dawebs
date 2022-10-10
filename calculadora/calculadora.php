@@ -12,6 +12,8 @@
     <?php
     require 'auxiliar.php';
 
+    $var = ['x' => 4, 'y' => 7];
+
     $op1 = trim($_GET['op1']);
     $op2 = trim($_GET['op2']);
     $op = trim($_GET['op']);

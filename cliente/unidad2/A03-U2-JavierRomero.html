@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A03-U2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var n1 = parseInt(prompt("Introduce el primer numero: "));
+        var n2 = parseInt(prompt("Introduce el segundo numero: "));
+        if (n1 > n2) {
+            for (var i = n2; i <= n1; i++) {
+                if ( i % 8 == 0) {
+                    document.write(i + " esta comprendido entre " + n2 + " y " + n1 + " y es múltiplo de 8</br>");
+                }
+            }
+        }else if (n1 < n2) {
+            for (var i = n1; i <= n2; i++) {
+                if ( i % 8 == 0) {
+                    document.write(i + " esta comprendido entre " + n1 + " y " + n2 + " y es múltiplo de 8</br>");
+                }
+            }
+        }else {
+            document.writeln("los numeros son iguales o son valores no validos");
+        }
+    </script>
+</body>
+</html>
