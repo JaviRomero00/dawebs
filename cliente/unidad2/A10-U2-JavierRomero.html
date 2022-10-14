@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A10 - U2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var n = prompt("Introduce un número:");
+        function sumar_entero() {
+            for (var i = 0; i < n.length; i++) {
+                if (n[i] == "."){
+                    break;
+                } else {
+                    var s1 = 0;
+                    s1 += n[i];
+                }
+            }
+            document.write("La suma de la parte entera es: " + s1);
+        }
+
+        function sumar_todo(){
+            for (var i = 0; i < n.length; i++) {
+                if (isNaN(n[i]) == false){
+                    var s2 = 0;
+                    s2 += n[1];
+                }
+            }
+            document.write("La suma de todas las partes es: " + s2);
+        }
+
+        <div>
+        <button onclick="sumar_entero()">Sumar solo parte entera</button>
+        <button onclick="sumar_todo()">Sumar todas las partes</button>
+        </div>
+
+    </script>
+
+</body>
+</html>
