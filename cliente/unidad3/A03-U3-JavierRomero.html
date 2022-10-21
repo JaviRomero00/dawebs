@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A03-U3</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var d = new Date(2000, 2, 22);
+        var a = new Date();
+        var ano = parseInt((a - d)/(1000*60*60*24*365));
+        var meses = parseInt((((a - d)%(1000*60*60*24*365))/(1000*60*60*24))/30.42);
+        var dias = parseInt(((((a - d)%(1000*60*60*24*365))/(1000*60*60*24))%30.42));
+        document.write("Tengo "+ano+" años, "+meses+" meses y "+dias+" dias.");
+    </script>
+</body>
+</html>

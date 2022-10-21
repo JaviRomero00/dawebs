@@ -1,0 +1,41 @@
+<HTML>
+    <SCRIPT>
+    var miFecha=new Date()
+    document.write("La fecha de hoy es " + miFecha + "</br>")
+    document.write("Dia de la semana " + miFecha.getDay() + "</br>"); // Dia de la semana
+    //Para ser correctos
+    var tbdays=new Array
+    ("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado")
+    document.write("Dia de la semana " + tbdays[miFecha.getDay()] + "</br>"); // Dia de la
+    semana
+    document.write("Dia del mes " + miFecha.getDate() + "</br>"); //Dia del mes
+    document.write("Mes " + miFecha.getMonth()+ "</br>"); //Mes
+    //Para ser correctos
+    document.write("Mes correcto " + (miFecha.getMonth()+1)+ "</br>"); //Mes
+    var tbmonths=new Array
+    ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+    document.write("Mes correcto " + tbmonths[(miFecha.getMonth())]+ "</br>"); //Mes
+    document.write("Año " + miFecha.getYear() + "</br>"); //Año
+    //Para ser correctos
+    document.write("Año " + miFecha.getFullYear() + "</br>"); //Año
+    var h=miFecha.getHours();
+    var m=miFecha.getMinutes();
+    var s=miFecha.getSeconds();
+    var ms=miFecha.getMilliseconds();
+    document.write("Hora" +h + ":" + m + ":" + s + ":" + ms + "</br>"); //hora
+    //Para ser correctos
+    if (h<10) {h="0"+ h}
+    if (m<10) {m="0"+ m}
+    if (s<10) {s="0"+ s}
+    document.write("Hora" +h + ":" + m + ":" + s + ":" + ms + "</br>"); //hora
+    document.write("Milisegundos desde 1970 - " + miFecha.getTime() + "</br></br>")
+    document.write("Minutos de diferencia entre hora local y la zona horaria de referencia- " + miFecha.getTimezoneOffset()+ "</br>")
+    document.write("Dia de la semana UTC " + miFecha.getUTCDay() + "</br>"); // Dia de la
+    semana
+    document.write("Dia del mes UTC " + miFecha.getUTCDate() + "</br>"); //Dia del mes
+    document.write("Mes UTC " + (miFecha.getUTCMonth() +1)+ "</br>"); //Mes
+    document.write("Año UTC " + miFecha.getUTCFullYear() + "</br>"); //Año
+    document.write("Hora UTC" + miFecha.getUTCHours() + ":" + miFecha.getUTCMinutes() +
+    ":" + miFecha.getUTCSeconds() + ":" + miFecha.getUTCMilliseconds() + "</br>"); //hora
+    </SCRIPT>
+    </HTML>
