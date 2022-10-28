@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A08 - U3</title>
+</head>
+<body>
+    <script>
+        var r = prompt("Indica el valor del radio del circulo:");
+        var area_c = Math.PI * Math.pow(r, 2);
+        var area_t = (3 * Math.sqrt(3)) * Math.pow(r,2);
+        document.write("El area del circulo con radio " + r + " es: " + area_c.toFixed(2) + "<br>");
+        document.write("El area del triangulo cuyo círculo Inscrito tiene Radio " +
+                        r + " es: " + area_t.toFixed(2) + "<br>");
+    </script>
+</body>
+</html>
