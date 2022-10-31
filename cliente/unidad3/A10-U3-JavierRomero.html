@@ -11,6 +11,14 @@
         var f = prompt("Indica una frase: ");
         var inicio = prompt("Indica la marca de inicio: ");
         var fin = prompt("Indica la marca de fin: ");
+        var t = f.substring(f.indexOf(inicio));
+        if (t.substr(0, t.indexOf(fin)) !== "") {
+            var tt = t.substr(0, t.indexOf(fin)) + fin;
+            document.write(tt);
+        } else {document.write("Los caracteres de " +
+        "inicio o fin no se encuentran en la frase indicada" +
+        ", o son incorrectos");
+        }
     </script>
 </body>
 </html>

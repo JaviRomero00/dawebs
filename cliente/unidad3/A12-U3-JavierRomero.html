@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A12 - U3</title>
+</head>
+<body>
+    <script>
+        var f = prompt("Indica una frase: ");
+        var p = prompt("Indicame una palabra a sustituir de la frase: ");
+        if (f == "" || isNaN(f) == false) {
+            document.write("La frase no contiene caracteres alfabeticos o esta vacia.");
+        }else if (f.indexOf(p) == -1) {
+            document.write("La palabra no se encuentra en la frase o esta mal escrita.");
+        } else if (f.indexOf(p) !== -1) {
+            var r = f.replace(p, "dwecl");
+            document.write("La nueva frase es: "+ r);
+        }
+    </script>
+</body>
+</html>
