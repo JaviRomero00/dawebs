@@ -7,8 +7,68 @@
     <title>A06 - U3</title>
 </head>
 <body>
+    <h1>Selecciona la zona horaria de la que deseas conocer la hora:</h1>
+    <p>
+        UTC -12 : Línea internacional de fecha del oeste
+        <br>
+        UTC -11 : Isla Midway, Samoa
+        <br>
+        UTC -10 : Hawai
+        <br>
+        UTC -9 : Alaska
+        <br>
+        UTC -8 : Hora del pacífico (USA y Canadá)
+        <br>
+        UTC -7 : Hora de las montañas rocosas (USA y Canadá)
+        <br>
+        UTC -6 : América central
+        <br>
+        UTC -5 : Hora central (USA y Canadá)
+        <br>
+        UTC -4 : Hora del Atlántico (Canadá)
+        <br>
+        UTC -3 : Buenos Aires, Asunción, Brasilia, Montevideo
+        <br>
+        UTC -2 : Atlántico central
+        <br>
+        UTC -1 : Azores
+        <br>
+        UTC 0 : Hora del meridiano de Greenwich, Londres, Dublín
+        <br>
+        UTC +1 : París, Madrid, Barcelona, Roma
+        <br>
+        UTC +2 : El Cairo
+        <br>
+        UTC +3 : Nairobi
+        <br>
+        UTC +4 : Bakú
+        <br>
+        UTC +5 : Ekaterimburgo
+        <br>
+        UTC +6 : Astana
+        <br>
+        UTC +7 : Bangkok
+        <br>
+        UTC +8 : Ulán Bator
+        <br>
+        UTC +9 : Tokio
+        <br>
+        UTC +10 : Sidney
+        <br>
+        UTC +11 : Islas Salomón
+        <br>
+        UTC +12 : Wellington
+    </p>
     <script>
-
+        function hora(){
+            var h = getHours();
+            var m = getMinutes();
+            var s = getSeconds();
+            var u = document.getElementById("betis").value;
+            document.write(u)
+        }
     </script>
+    <input type="text" id="betis">
+    <input type="button" onclick="hora()" value="buscar">
 </body>
 </html>
