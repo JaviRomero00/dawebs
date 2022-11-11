@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A01 - U4</title>
+</head>
+<body>
+    <script>
+        function obtenerImporteConImpuestos() {
+            var isi = parseFloat(prompt("Introduzca el importe sin impuestos:"));
+            var t = parseInt(prompt("Introduce el tipo de producto (1, 2, 3): "));
+            if (isNaN(t) == true) {
+                t = 1;
+            }
+            document.write("El importe sin impuesto es: " + isi + " euros <br>");
+            document.write("El producto es de tipo " + t + "<br>");
+            if (isNaN(isi) == true){
+                document.write("El importe introducido no es un valor correcto.")
+            } else if (t == 1) {
+                var imf = isi * 1.21;
+                document.write("El importe total es de " + imf.toFixed(2) + " euros");
+            } else if (t == 2) {
+                var imf = isi * 1.10;
+                document.write("El importe total es de " + imf.toFixed(2) + " euros");
+            } else if (t == 3) {
+                var imf = isi * 1.05;
+                document.write("El importe total es de " + imf.toFixed(2) + " euros");
+            } else {
+                document.write("El importe introducido o el tipo no son correctos");
+            }
+        }
+        obtenerImporteConImpuestos();
+    </script>
+</body>
+</html>
