@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A04 - U4</title>
+</head>
+<body>
+    <script>
+        var a = [];
+        var c = 0;
+        var suma = 0;
+        for (i = 0; i < 21; i++) {
+            if (i % 2 !== 0) {
+                a[c] = Math.floor(i);
+                c++;
+            }
+        }
+        for (i = 0; i <= a.length; i++) {
+            suma+=a[i];
+        }
+        var b = parseInt(prompt("Introduzca un valor a buscar en el array: "));
+        if (a.indexOf(b) !== -1){
+            var p = a.indexOf(b);
+            t = "El valor se encuentra en el array y su posición es: " + p;
+        } else {
+            t = "El valor introducido no se encuentra en el array."
+        }
+        document.write(a + "<br>");
+        document.write("Calcula el sumatorio de dichos números impares e imprime el resultado.<br>");
+        document.write(suma + "<br>");
+        document.write("Muestra en orden inverso el array creado anteriormente.<br>");
+        document.write(a.reverse() + "<br>");
+        document.write("Lea un valor que escriba el usuario y búsquelo en el array. Indique si la" +
+        " búsqueda tuvo éxito indicando la posición o si no tuvo éxito.<br>");
+        document.write(t + "<br>");
+        document.write("En caso de tener éxito, borra su valor.<br>");
+        delete a[a.indexOf(b)];
+        document.write(a + "<br>");
+        document.write("Muéstrelo ordenado de forma ascendente, y a continuación de forma descendente.<br>");
+        document.write("Ascendente: " + a.sort() + "<br>Descendente: " + a.sort().reverse());
+    </script>
+</body>
+</html>
